@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ### Author: Dario Galanti August 2022
-### Aim: Remove ambiguous reads from Thlaspi alignments. These are reads mapping to the targer (Thlaspi), but also to either the aphid, buchnera or mildew genomes. If not removed, they create false positive SNPs strongly associated to the number of Aphid, Buchnera and Mildew reads
+### Aim: Remove ambiguous reads from Thlaspi alignments. These are reads mapping to the target (Thlaspi), but also to either the aphid, buchnera or mildew genomes. If not removed, they create false positive SNPs strongly associated to the number of Aphid, Buchnera and Mildew reads
 ### Input 1): Dir containing Thlaspi alignment bam files
 ### Input 2): Dir containing Aphid alignment bam files - Contaminant 1
 ### Input 3): Dir containing Buchnera alignment bam files - Contaminant 2

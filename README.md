@@ -15,5 +15,5 @@ Remove ambiguous reads from the target species alignments (T. arvense in our cas
 Before running this script raw reads should be [mapped](https://github.com/Dario-Galanti/BinAC_varcalling/blob/main/1_BWA_multi_align_BinAC.sh) to the target and any other suspected contaminant. To save space, we suggest removing unmapped reads when mapping to the contaminants (samtools view -F 4).
 
 [Region_bedcov.sh](https://github.com/Dario-Galanti/Exoreads_treasure/blob/main/Region_bedcov.sh)<br/>
-Calculate coverage of a set of bam files in a specific region, divided into bins.
+Calculate coverage of a set of bam files in a specific region, divided into bins, using [samtools bedcov](http://www.htslib.org/doc/samtools-bedcov.html).
 

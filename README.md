@@ -14,3 +14,6 @@ We used it to map non-target reads (not mapping to the T. arvense genome) to the
 Remove ambiguous reads from the target species alignments (T. arvense in our case). These are reads mapping to the target (T. arvense), but also to contaminants (either the aphid, buchnera or mildew genomes). If not removed, these ambiguous reads can create false positive SNPs strongly associated to the number of Aphid, Buchnera and Mildew reads.
 Before running this script raw reads should be [mapped](https://github.com/Dario-Galanti/BinAC_varcalling/blob/main/1_BWA_multi_align_BinAC.sh) to the target and any other suspected contaminant. To save space, we suggest removing unmapped reads when mapping to the contaminants (samtools view -F 4).
 
+[Region_bedcov.sh](https://github.com/Dario-Galanti/Exoreads_treasure/blob/main/Region_bedcov.sh)<br/>
+Calculate coverage of a set of bam files in a specific region, divided into bins.
+

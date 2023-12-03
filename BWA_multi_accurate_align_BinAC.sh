@@ -72,7 +72,7 @@ do
 	## Run bwa alignment (-R attaches read group, necessary for MarkDuplicatesSpark) removing unmapped reads (samtools -F 4)
 	#echo "${bwa} mem -t 8 -R $(echo \${RG}) -c 1 ${genome} \${fin_1} \${fin_2} | $samtools view -h -F 4 -o \${samfile}"	# normal mapping
 	## Accurate mapping. We increase seed length (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5643015/) and remove low MAPQ reads
-	echo "${bwa} mem -t 8 -R $(echo \${RG}) -c 1 -k 23 ${genome} \${fin_1} \${fin_2} | $samtools view -h -F 4 -q 20 -o \${samfile}"
+	echo "${bwa} mem -t 8 -R $(echo \${RG}) -c 1 -k 25 ${genome} \${fin_1} \${fin_2} | $samtools view -h -F 4 -q 20 -o \${samfile}"
 	
 	echo "echo -e \"${sample} bwa alignment finished\n\""
 	## MarkDuplicatesSpark (will output a coordinate-sorted bamfile)
